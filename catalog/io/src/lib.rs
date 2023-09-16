@@ -1,8 +1,10 @@
 #![no_std]
 
-use gmeta::{In, InOut, Metadata};
+use gmeta::{In, InOut, Metadata, Out};
 use gstd::{prelude::*, ActorId};
 use types::primitives::*;
+use gstd::collections::BTreeSet;
+use gstd::collections::BTreeMap;
 
 pub struct CatalogMetadata;
 
@@ -12,7 +14,7 @@ impl Metadata for CatalogMetadata {
     type Others = ();
     type Reply = ();
     type Signal = ();
-    type State = CatalogState;
+    type State = Out<CatalogState>;
 }
 
 #[derive(Debug, Default, Encode, Decode, TypeInfo)]

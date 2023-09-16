@@ -7,14 +7,14 @@ authors.workspace = true
 
 [dependencies]
 gstd.workspace = true
-gmeta = { git = "https://github.com/gear-tech/gear.git", rev = "946ac47", features = ["codegen"] }
+gmeta = { git = "https://github.com/gear-tech/gear.git", rev = "4e263f0", features = ["codegen"] }
 primitive-types.workspace = true
 scale-info.workspace = true
 rmrk-io.workspace = true
 types.workspace = true
 
 [build-dependencies]
-gear-wasm-builder = { git = "https://github.com/gear-tech/gear.git", rev = "946ac47", features = ["metawasm"] }
+gear-wasm-builder = { git = "https://github.com/gear-tech/gear.git", rev = "4e263f0", features = ["metawasm"] }
 
 [features]
 # Used for inserting constants with WASM binaries (NOT paths) of the contract in
